@@ -87,7 +87,7 @@ def test_bonus():
 #=======================================================================#
 
 if args.zip:
-    rc = subprocess.call(f"zip -r {zipName} */*.asm", shell=useShell)
+    rc = subprocess.call(f"cd ../src/; zip -r {zipName} */*.asm", shell=useShell)
     exit(rc)
 
 print("\n" + header)
