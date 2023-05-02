@@ -107,4 +107,4 @@ elif args.bonus:
 
 
 print(f"====================== TOTAL POINTS ======================\n")
-print(f"Total: {points}/100")
+print(f"Total: {points}/120")
