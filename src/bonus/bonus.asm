@@ -15,6 +15,8 @@ bonus:
 
     ;; DO NOT MODIFY
     ;; FREESTYLE STARTS HERE
+    mov esi, ebx
+    
 
     ;; FREESTYLE ENDS HERE
     ;; DO NOT MODIFY

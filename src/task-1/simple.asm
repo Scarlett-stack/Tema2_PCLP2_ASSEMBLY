@@ -18,13 +18,23 @@ simple:
     ;; DO NOT MODIFY
    
     ;; Your code starts here
-
-
-
+     
+valid:
+    mov al, byte [esi]                      ; iau un octet adica un char 
+    add al, dl                              ;adaug step 
+    cmp al, 0x5A                            ;verifc daca depaseste alfabetul
+    jle nu_scurtez                          ; if not il las asa
+    sub al, 26                              ; scad si pleaca jos
+nu_scurtez:
+     mov byte [edi], al                     ; scriu in enc_string
+     inc esi                                ; next ch
+     inc edi                                ; pregatesc offsetul urm in edi
+     loop valid
 
     ;; Your code ends here
     
     ;; DO NOT MODIFY
+
 
     popa
     leave
